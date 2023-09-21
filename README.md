@@ -86,12 +86,11 @@ I do not have to process eVar3 in processing rules as context data. It will popu
 <img width="829" alt="10_xdm" src="https://github.com/walexbarnes/aep-websdk-implementation/assets/59946143/93b28b0e-9e25-4649-9633-653a1243d00c">
 
 
-###Load Rule
+### Load Rule
 
 Now that we have populated our schema, let's tell Adobe Launch when to deliver it to the Edge Network via a load rule. 
 
-**This entire implementation deploys Adobe Target, Adobe Analytics (all links and page views), ECID, etc. with just one load rule!
-**
+**This entire implementation deploys Adobe Target, Adobe Analytics (all links and page views), ECID, etc. with just one load rule!**
 
 This is what that load rule looks like. 
 
