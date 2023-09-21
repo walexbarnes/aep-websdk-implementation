@@ -119,7 +119,8 @@ The XDM Prod data element is the XDM data element we referenced earlier. But wha
 
 That is a data element that will tell the Web SDK if this is an s.t() call or an s.tl() call, basically - if you are coming from the "old way". How does it work? 
 
-<img width="532" alt="13_action_deliver" src="https://github.com/walexbarnes/aep-websdk-implementation/assets/59946143/eaea69f2-bf7b-4599-bc89-fe86c16e4120">
+<img width="683" alt="mappingtable" src="https://github.com/walexbarnes/aep-websdk-implementation/assets/59946143/a15273e9-1982-40d0-8781-06de6e444265">
+
 
 This data element is a lookup table. It references the event payload from the load rule's triggering criteria (that is why we pass it through as an argument). If that event name is a page view, we will increment page views. If it is not, we will increment link clicks. 
 
