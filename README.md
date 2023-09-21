@@ -13,12 +13,12 @@ What if I told you that actually, this website was sending data to both Adobe An
 # What is Going On?
 The site in the first screenshot is doing things traditionally. Client side deployment of AppMeasurement.js, at.js, and the Visitor API to deploy Adobe Analytics, Adobe Target, and ECID. 
 
-<img width="458" alt="3_new_collection" src="https://github.com/walexbarnes/aep-websdk-implementation/assets/59946143/28ee8649-230e-448d-983b-c9460f3e0802">
+<img width="425" alt="3_trad_collection" src="https://github.com/walexbarnes/aep-websdk-implementation/assets/59946143/5d6ab138-a312-4592-b9fb-7f90c979503b">
 
 
 The site in the second screenshot is doing things the new way. One JavaScript file takes care of the deployment of all these technologies, alloy.js, by sending calls to Adobe's Edge Network and then to the relevant Adobe solution.
 
-<img width="425" alt="3_trad_collection" src="https://github.com/walexbarnes/aep-websdk-implementation/assets/59946143/5d6ab138-a312-4592-b9fb-7f90c979503b">
+<img width="458" alt="3_new_collection" src="https://github.com/walexbarnes/aep-websdk-implementation/assets/59946143/28ee8649-230e-448d-983b-c9460f3e0802">
 
 
 # Why Would I Do It Like This? 
