@@ -131,7 +131,7 @@ With the hard work behind us, let's take a look at what is happening on the site
 
 Remember. Target, Analytics, ECID are not on the page. However, if I log into the AEP Debugger, I can see what we are doing with the Web SDK payload once it hits Edge network. 
 
-<img width="460" alt="14_payload" src="https://github.com/walexbarnes/aep-websdk-implementation/assets/59946143/b58c7daf-3238-4ae4-b9b8-a2a7a6bba157">
+<img width="259" alt="14_payload" src="https://github.com/walexbarnes/aep-websdk-implementation/assets/59946143/8ca373b1-2dab-4fe4-8e82-531a7003d95f">
 
 We see it delivering the information to Adobe Analytics and deploying Target. If we look a little closer, we can inspect the schema to ensure data collection is taking place properly. 
 
