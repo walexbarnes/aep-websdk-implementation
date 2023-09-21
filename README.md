@@ -12,6 +12,7 @@ What if I told you that actually, this website was sending data to both Adobe An
 
 # What is Going On?
 The site in the first screenshot is doing things traditionally. Client side deployment of AppMeasurement.js, at.js, and the Visitor API to deploy Adobe Analytics, Adobe Target, and ECID. 
+
 <img width="458" alt="3_new_collection" src="https://github.com/walexbarnes/aep-websdk-implementation/assets/59946143/28ee8649-230e-448d-983b-c9460f3e0802">
 
 
