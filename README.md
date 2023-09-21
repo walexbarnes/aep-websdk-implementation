@@ -115,6 +115,17 @@ Now, we just have to deliver that information to Adobe's Edge Network using our 
 
 <img width="532" alt="13_action_deliver" src="https://github.com/walexbarnes/aep-websdk-implementation/assets/59946143/fcc362d7-1a80-4df0-819b-790d0e009940">
 
+The XDM Prod data element is the XDM data element we referenced earlier. But what is mappingEventType? 
+
+That is a data element that will tell the Web SDK if this is an s.t() call or an s.tl() call, basically - if you are coming from the "old way". How does it work? 
+
+<img width="532" alt="13_action_deliver" src="https://github.com/walexbarnes/aep-websdk-implementation/assets/59946143/eaea69f2-bf7b-4599-bc89-fe86c16e4120">
+
+This data element is a lookup table. It references the event payload from the load rule's triggering criteria (that is why we pass it through as an argument). If that event name is a page view, we will increment page views. If it is not, we will increment link clicks. 
+
+
+
+
 
 
 
