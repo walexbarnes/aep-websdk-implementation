@@ -124,8 +124,24 @@ That is a data element that will tell the Web SDK if this is an s.t() call or an
 This data element is a lookup table. It references the event payload from the load rule's triggering criteria (that is why we pass it through as an argument). If that event name is a page view, we will increment page views. If it is not, we will increment link clicks. 
 
 
+# Debugging
 
+With the hard work behind us, let's take a look at what is happening on the site. 
 
+Remember. Target, Analytics, ECID are not on the page. However, if I log into the AEP Debugger, I can see what we are doing with the Web SDK payload once it hits Edge network. 
 
+<img width="460" alt="14_payload" src="https://github.com/walexbarnes/aep-websdk-implementation/assets/59946143/b58c7daf-3238-4ae4-b9b8-a2a7a6bba157">
+
+We see it delivering the information to Adobe Analytics and deploying Target. If we look a little closer, we can inspect the schema to ensure data collection is taking place properly. 
+
+<img width="950" alt="15_detailedpayload" src="https://github.com/walexbarnes/aep-websdk-implementation/assets/59946143/4425300f-ad43-4362-ad58-d4bcb3ee39bc">
+
+You know what else is neat? We can also verify this data in AEP. 
+
+<img width="997" alt="16_data_aep" src="https://github.com/walexbarnes/aep-websdk-implementation/assets/59946143/21db6ee6-5704-4e70-bc96-19f668eb0980">
+
+And, I never mentioned this, but if you are populating the identity map field of the schema, when a user authenticates, their profile will be updated in Platform's Real Time CDP and linked accordingly with disparate data sources. 
+
+<img width="649" alt="17_identities" src="https://github.com/walexbarnes/aep-websdk-implementation/assets/59946143/3d09313b-99da-4ea9-8975-55d4227fb85d">
 
 
